@@ -79,8 +79,8 @@ function preload(){
     this.load.spritesheet("zombie", "assets/zombie-sheet.png", { frameWidth: 80, frameHeight: 110 });
     this.load.image("bg", "assets/background.png");
     this.load.audio("music", "assets/music.mp3");
-    this.load.audio("pop", "assets/pop.ogg");
-    this.load.audio("click", "assets/click.ogg");
+    this.load.audio("pop", "assets/pop.mp3");
+    this.load.audio("click", "assets/click.mp3");
     this.load.audio("zombie-groan", "assets/zombie-groan.mp3");
     this.load.audio("zombie-eat", "assets/zombie-eat.mp3");
     this.load.audio("zombie-die", "assets/zombie-die.mp3");
