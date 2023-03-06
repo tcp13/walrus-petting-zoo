@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- metadata -->
+		<title>Lipsum</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- seo -->
+		<meta name="title" content="Lispum">
+		<meta name="description" content="Lorem ipsum.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://lipsum.com/">
+		<meta property="og:title" content="Lipsum">
+		<meta property="og:description" content="Lorem ipsum.">
+		<meta property="og:image" content="https://lipsum.com/thumbnail.png">
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://lipsum.com/">
+		<meta property="twitter:title" content="Lipsum">
+		<meta property="twitter:description" content="Lorem ipsum.">
+		<meta property="twitter:image" content="https://lipsum.com/thumbnail.png">
+
+		<!-- styles -->
+		<link rel="stylesheet" href="styles.css">
+
+		<!-- favicons 
+		<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+		<link rel="manifest" href="favicons/site.webmanifest">
+        -->
+		
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+        <!-- Phaser -->
+        <script src="https://cdn.jsdelivr.net/npm/phaser@3.51.0/dist/phaser.min.js"></script>
+	</head>
+	<body>
+		<header>
+            <h1 id="game-title">Walrus Petting Zoo</h1>
+        </header>
+        <main>
+            <div id="canvas"></div>
+            <p id="mobile-notice">For the best experience, turn device into landscape mode and refresh the page.</p>
+        </main>
+        <footer>
+            <div class="col-2">
+                <div class="col">
+                    <p class="footer-text"><strong>Lipsum v1.0</strong><br>Tyler Puckett © 2023<br><a href="/terms.html">Terms of Use</a> | <a href="https://tyler-puckett.com/#page-section-627c16fe9e1aa7738a176d15" target="_blank">Feedback</a></p>
+                </div>
+                <div class="col">
+                    <div id="socialShare">
+                        <h2>Share:</h2>
+                        <a aria-label="Facebook" href="https://www.facebook.com" target="_blank"><img src="icons/facebook-white.png"></a>
+                        <a aria-label="Twitter" href="https://twitter.com" target="_blank"><img src="icons/twitter-white.png"></a>
+                        <a aria-label="LinkedIn" href="https://www.linkedin.com" target="_blank"><img src="icons/linkedin-white.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal -->
+            <div id="modal" role="dialog" class="modal-hidden">
+                <div class="modal-content">
+                    <button aria-label="close modal" type="button" class="close-modal" onclick="toggleModal();">&times;</button>
+                    <h2>This is a modal.</h2>
+                    <p>Lorem ipsum.</p>
+                </div>
+            </div>
+            
+            <!-- scripts -->
+            <script src="script.js"></script>
+            <!--<script src="analytics.js"></script>-->
+        </footer>
+    </body>
+</html>
